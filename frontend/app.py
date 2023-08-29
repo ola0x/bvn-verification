@@ -15,4 +15,7 @@ if __name__ == "__main__":
 
         img_arr = np.array(img)
 
-        st.write(img_arr.shape)
+        bvn_number_ip = st.number_input(':green[Enter BVN]',min_value=0, max_value=99999999999)
+        
+        if bvn_number_ip is not None:
+            st.write(bvn_number_ip)
